@@ -1,0 +1,17 @@
+.btns a {
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 143.523%;
+    padding: 1.6rem 1rem;
+    text-align: center;
+    width: 174px;
+    border-radius: 2rem;
+    background: linear-gradient(180deg, #A35BFF 0%, #811FFF 100%);
+    display: inline-block;
+    transition: .5s ease;
+}
+.btns a:hover{
+    background: linear-gradient(120deg, #A35BFF 0%, #811FFF 100%);
+
+}
