@@ -20,6 +20,12 @@ import upgradeImg2 from "../assets/img/image 29.png";
 // PACK CARD DATA
 import { PackCardData } from "../components/PackCardData.js"
 
+// GAMES CARD DATA
+import { GamesCardData } from "../components/gamesCardData.js"
+import { Link } from 'react-router-dom';
+import EventCard from '../components/EventCard/EventCard.jsx';
+import { EventCardData } from '../components/EventCardData.js';
+
 const Home = () => {
     return (
         <>
@@ -176,12 +182,59 @@ const Home = () => {
 
                     </div>
 
-                    
+
                 </div>
-            <img className='line-blur-img2' src="./imgs/Rectangle 25.png" alt="" />
+                <img className='line-blur-img2' src="./imgs/Rectangle 25.png" alt="" />
             </section>
             {/* ROOM SECTION END */}
 
+            {/* GAMES SECTION START */}
+            <section className='games' >
+                <img className='gm-elipse' src="./imgs/Ellipse 10.png" alt="" />
+                <img className='line-bar1' src="./imgs/Rectangle 49.png" alt="" />
+                <img className='line-bar2' src="./imgs/Rectangle 47.png" alt="" />
+                <div className="container">
+                    <h2 className='text-center'>Games</h2>
+                    <div className="row">
+
+                        {
+                            GamesCardData.map((data, index) => (
+                                <div className="col-md-4 col-sm-6 my-3 px-3" key={index}>
+                                    <div className="games-card h-100">
+                                        <div className="game-card-img">
+                                            <img src={data.img} width={"100%"} alt="King of the hail" />
+                                        </div>
+                                        <p>{data.text}</p>
+                                    </div>
+                                </div>
+                            ))
+                        }
+
+
+
+                    </div>
+                </div>
+            </section>
+            {/* GAMES SECTION END */}
+
+
+            {/* EVENT SECTION START */}
+            <section className='events'>
+                <SectionHeader heading={"Latest Events"} btnText={"See All"} btnUrl={"#"} />
+                <div className="container">
+                    <div className="row">
+                        {
+                            EventCardData.map((data, index) => (
+                                <div className="col-lg-4 col-sm-6 my-4" key={index}>
+                                    <EventCard data={data} />
+                                </div>
+                            ))
+                        }
+
+                    </div>
+                </div>
+            </section>
+            {/* EVENT SECTION END */}
 
 
         </>

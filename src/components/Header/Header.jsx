@@ -19,6 +19,10 @@ const Header = () => {
         setNav(!nav);
     }
 
+    window.addEventListener("scroll", (e)=>{
+        document.getElementById("header").style.backdropFilter = "blur(30px)";
+    })
+    
 
     return (
         <>

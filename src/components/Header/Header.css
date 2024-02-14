@@ -1,10 +1,16 @@
 #header{
-    overflow: hidden;
+    /* overflow: hidden; */
     border-bottom: 1px solid #21004B;
-    background: linear-gradient(to right , #21004B, #21004B), url("../../assets/img/image 3.png");
+    /* background: linear-gradient(to right , #21004B, #21004B), url("../../assets/img/image 3.png"); */
     background-position: center top;
-    /* backdrop-filter: 100px; */
+    backdrop-filter: blur(5px) ;
+    background-color: transparent;
     padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
 }
 #header .headerNav .logo{
     width: 200px;
