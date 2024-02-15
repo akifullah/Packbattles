@@ -29,11 +29,11 @@ const Header = () => {
             <header id='header'>
                 <div className="container">
                     <nav className='d-flex align-items-center navbar-expand-lg w-100 headerNav'>
-                        <Link className='logo' to={"/"}>
+                        <Link className='logo' to={"/"} data-aos="fade-right">
                             <img src={logo} alt="Packbatles logo" />
                         </Link>
 
-                        <button className='toggler ms-auto d-block d-lg-none' onClick={handleNav} >
+                        <button className='toggler ms-auto d-block d-lg-none' data-aos="fade-left" onClick={handleNav} >
                             {
                                 nav ? <FaTimes /> : <FaBarsStaggered />
                             }
@@ -44,7 +44,7 @@ const Header = () => {
                                 <FaTimes />
                             </button>
 
-                            <ul className='navbar-nav'>
+                            <ul className='navbar-nav' data-aos="zoom-in">
                                 <li>
                                     <NavLink to={"/packs"}>Packs</NavLink>
                                 </li>
@@ -68,8 +68,8 @@ const Header = () => {
                                 <SocialIcon />
                             </div>
                             <div className="header-buttons ms-auto d-flex align-items-center">
-                                <Link className='me-3' to={"/login"}>Log In</Link>
-                                <Link className='signup-btn' to={"/singup"}>Sign Up</Link>
+                                <Link className='me-3' to={"/login"} data-aos="fade-down">Log In</Link>
+                                <Link className='signup-btn' to={"/singup"} data-aos="fade-up">Sign Up</Link>
                             </div>
 
                         </div>
