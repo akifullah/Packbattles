@@ -11,16 +11,16 @@ const Footer = () => {
     <footer className='footer'>
         <div className="container">
             <div className="row">
-                <div className="col-md-8">
-                    <div className="ft-logo">
+                <div className="col-md-8" >
+                    <div className="ft-logo" data-aos="fade-right" >
                         <img src={logo} alt="Packbattles logo" />
                     </div>
-                    <div className="ft-social">
+                    <div className="ft-social" data-aos="fade-up" >
                         <SocialIcon/>
                     </div>
                 </div>
 
-                <div className="col-md-2 col-6">
+                <div className="col-md-2 col-6" data-aos="fade-down" >
                     <ul>
                         <li><Link>Packs</Link></li>
                         <li><Link>Battles</Link></li>
@@ -28,7 +28,7 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                <div className="col-md-2 col-6">
+                <div className="col-md-2 col-6" data-aos="fade-left" >
                     <ul>
                         <li><Link>Upgrade</Link></li>
                         <li><Link>Trade</Link></li>
@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
 
         <div className="copyright text-center">
-            <p>© 2023 All rights Reserved.</p>
+            <p data-aos="zoom-in" >© 2023 All rights Reserved.</p>
         </div>
         
     </footer>
