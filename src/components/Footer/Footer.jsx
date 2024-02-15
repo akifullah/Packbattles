@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
 
         <div className="copyright text-center">
-            <p data-aos="zoom-in" >© 2023 All rights Reserved.</p>
+            <p  >© 2023 All rights Reserved.</p>
         </div>
         
     </footer>
