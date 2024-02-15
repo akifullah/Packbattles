@@ -40,3 +40,9 @@
     font-weight: 500;
     margin: 0;
 }
+.footer .social-icon{
+    margin-top: 2rem;
+}
+.footer .social-icon ul li a{
+    font-size: 2rem;
+} 

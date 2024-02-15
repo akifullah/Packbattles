@@ -20,7 +20,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="col-md-2">
+                <div className="col-md-2 col-6">
                     <ul>
                         <li><Link>Packs</Link></li>
                         <li><Link>Battles</Link></li>
@@ -28,7 +28,7 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                <div className="col-md-2">
+                <div className="col-md-2 col-6">
                     <ul>
                         <li><Link>Upgrade</Link></li>
                         <li><Link>Trade</Link></li>

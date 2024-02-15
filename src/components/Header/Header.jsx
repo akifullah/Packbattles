@@ -19,10 +19,10 @@ const Header = () => {
         setNav(!nav);
     }
 
-    window.addEventListener("scroll", (e)=>{
+    window.addEventListener("scroll", (e) => {
         document.getElementById("header").style.backdropFilter = "blur(30px)";
     })
-    
+
 
     return (
         <>
@@ -35,11 +35,14 @@ const Header = () => {
 
                         <button className='toggler ms-auto d-block d-lg-none' onClick={handleNav} >
                             {
-                                nav? <FaTimes/> : <FaBarsStaggered />
+                                nav ? <FaTimes /> : <FaBarsStaggered />
                             }
                         </button>
 
-                        <div className={`d-lg-flex align-items-center w-100 ${nav ? 'nav-active' : null }`} id='topNav'>
+                        <div className={`d-lg-flex align-items-center w-100 ${nav ? 'nav-active' : null}`} id='topNav'>
+                            <button className='closeNav ms-auto d-block d-lg-none ' onClick={handleNav} >
+                                <FaTimes />
+                            </button>
 
                             <ul className='navbar-nav'>
                                 <li>
@@ -62,7 +65,7 @@ const Header = () => {
                                 </li>
                             </ul>
                             <div className="h-social d-none d-xxl-block ms-auto ">
-                                <SocialIcon/>
+                                <SocialIcon />
                             </div>
                             <div className="header-buttons ms-auto d-flex align-items-center">
                                 <Link className='me-3' to={"/login"}>Log In</Link>
