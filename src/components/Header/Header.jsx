@@ -46,22 +46,22 @@ const Header = () => {
 
                             <ul className='navbar-nav' data-aos="zoom-in">
                                 <li>
-                                    <NavLink to={"/packs"}>Packs</NavLink>
+                                    <NavLink activeclassname="active"  to={"/packs"}>Packs</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to={"/battles"}>Battles</NavLink>
+                                    <NavLink activeclassname="active" to={"/battles"}>Battles</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to={"/event"}>Event</NavLink>
+                                    <NavLink activeclassname="active" to={"/events"}>Event</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to={"/upgrade"}>Upgrade</NavLink>
+                                    <NavLink activeclassname="active" to={"/upgrade"}>Upgrade</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to={"/trade"}>Trade</NavLink>
+                                    <NavLink activeclassname="active" to={"/trade"}>Trade</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="#" >More</NavLink>
+                                    <NavLink   >More</NavLink>
                                 </li>
                             </ul>
                             <div className="h-social d-none d-xxl-block ms-auto ">

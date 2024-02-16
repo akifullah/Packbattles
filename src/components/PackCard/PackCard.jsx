@@ -21,9 +21,9 @@ const PackCard = ({text, img, price , url, active}) => {
             <img className='line-img line-u' src={lineUp} alt="carve line" />
             : null
         }
-        <img src={img} alt="Pack card image" />
+        <img className='pack-img' src={img} alt="Pack card image" />
         <p>{text}</p>
-        <Link to={url}>$200</Link>
+        <Link to={url}>${price}</Link>
 
         {
           active ?

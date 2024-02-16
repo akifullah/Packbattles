@@ -1,5 +1,5 @@
 .packCard {
-    margin: 2.5rem 0;
+    margin: 3.5rem 0;
     position: relative;
     isolation: isolate;
 }
@@ -17,8 +17,12 @@
     bottom: -30px;
 }
 
-.packCard img {
+.packCard img.pack-img {
     width: 70%;
+    transition: .5s ease;
+}
+.packCard:hover img.pack-img{
+    transform: translateY(-10px);
 }
 
 .packCard p {

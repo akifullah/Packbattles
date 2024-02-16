@@ -28,7 +28,7 @@
     transition: 0.4s ease;
 }
 
-#topNav ul li a:hover{
+#topNav ul li a:is(:hover, .active){
     opacity: .7;
 }
 

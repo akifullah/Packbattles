@@ -128,7 +128,7 @@ const Home = () => {
                 <div className="container">
                     <div className="row pack-cards">
                         {
-                            PackCardData.map((data, index) => (
+                            PackCardData.slice(0,4).map((data, index) => (
                                 <div className="col-lg-3 col-md-6 " data-aos="fade-up" key={index}>
                                     <PackCard text={data.text} active={data.active} img={data.img} url={data.url} />
                                 </div>
@@ -253,8 +253,8 @@ const Home = () => {
                 <div className="container">
                     <div className="row">
                         {
-                            EventCardData.map((data, index) => (
-                                <div className="col-lg-4 col-sm-6 my-4" data-aos="zoom-in"  key={index}>
+                            EventCardData?.slice(0,3).map((data, index) => (
+                                <div className="col-lg-4 col-sm-6 my-5" data-aos="zoom-in"  key={index}>
                                     <EventCard data={data} />
                                 </div>
                             ))
