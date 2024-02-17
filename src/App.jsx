@@ -15,6 +15,7 @@ import Pack from './pages/Pack/Pack';
 import Events from './pages/Events/Events';
 import Event from './pages/Event/Event';
 import Upgrade from './pages/Upgrade/Upgrade';
+import Trade from './pages/Trade/Trade';
 
 
 
@@ -39,6 +40,7 @@ const App = () => {
         <Route path="/events" element={<Events/>}/>
         <Route path="/event" element={<Event/>}/>
         <Route path="/upgrade" element={<Upgrade/>}/>
+        <Route path="/trade" element={<Trade/>}/>
       </Routes>
 
       <Footer/>
