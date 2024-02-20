@@ -94,6 +94,19 @@ p {
   }
 }
 
+.m-btn {
+  all: unset;
+  border-radius: 2rem;
+  background: linear-gradient(180deg, #A35BFF 0%, #811FFF 100%);
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 1.5rem;
+}
+
 
 /* SEARCH CONTAINER SECTION */
 
@@ -207,8 +220,9 @@ p {
   .search-container .search {
     width: 30%;
     min-width: 150px;
-    
+
   }
+
   .search-container .search .input-wrap input {
     padding-left: 30px;
   }
@@ -236,6 +250,7 @@ p {
     min-width: 150px;
     margin-bottom: 1rem;
   }
+
   .search-container .search .input-wrap input {
     padding-left: 30px;
   }

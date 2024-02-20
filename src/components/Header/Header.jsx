@@ -69,7 +69,7 @@ const Header = () => {
                             </div>
                             <div className="header-buttons ms-auto d-flex align-items-center">
                                 <Link className='me-3' to={"/login"} data-aos="fade-down">Log In</Link>
-                                <Link className='signup-btn' to={"/singup"} data-aos="fade-up">Sign Up</Link>
+                                <Link className='signup-btn' to={"/signup"} data-aos="fade-up">Sign Up</Link>
                             </div>
 
                         </div>

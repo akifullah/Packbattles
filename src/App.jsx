@@ -16,6 +16,21 @@ import Events from './pages/Events/Events';
 import Event from './pages/Event/Event';
 import Upgrade from './pages/Upgrade/Upgrade';
 import Trade from './pages/Trade/Trade';
+import Battles from './pages/Battles/Battles';
+import DuelBattle from './pages/DuelBattle/DuelBattle';
+import DuelBattleWinner from './pages/DuelBattleWinner/DuelBattleWinner';
+import BattlePopup from './pages/BattlePopup/BattlePopup';
+import HighBall from './pages/HighBall/HighBall';
+import DiceRoll from './pages/DiceRoll/DiceRoll';
+import DiceRolled from './pages/DiceRolled/DiceRolled';
+import DiceRollPopup from './pages/DiceRollPopup/DiceRollPopup';
+import KingOfTheHillSelect from './pages/KingOfTheHillSelect/KingOfTheHillSelect';
+import KingOfTheHill from './pages/KingOfTheHill/KingOfTheHill';
+import KingOfTheHillWinner from './pages/KingOfTheHillWinner/KingOfTheHillWinner';
+import KingOfTheHillNextRound from './pages/KingOfTheHillNextRound/KingOfTheHillNextRound';
+import KingOfTheHillTournamentOver from './pages/KingOfTheHillTournamentOver/KingOfTheHillTournamentOver';
+import Login from './pages/Login/Login';
+import SignUp from './pages/SignUp/SignUp';
 
 
 
@@ -41,6 +56,21 @@ const App = () => {
         <Route path="/event" element={<Event/>}/>
         <Route path="/upgrade" element={<Upgrade/>}/>
         <Route path="/trade" element={<Trade/>}/>
+        <Route path="/battles" element={<Battles/>}/>
+        <Route path="/duel-battle" element={<DuelBattle/>}/>
+        <Route path="/duel-battle-winner" element={<DuelBattleWinner/>}/>
+        <Route path="/battle-popup" element={<BattlePopup/>}/>
+        <Route path="/high-ball" element={<HighBall/>}/>
+        <Route path="/dice-roll" element={<DiceRoll/>}/>
+        <Route path="/dice-rolled" element={<DiceRolled/>}/>
+        <Route path="/dice-roll-popup" element={<DiceRollPopup/>}/>
+        <Route path="/king-of-the-hill-select" element={<KingOfTheHillSelect/>}/>
+        <Route path="/king-of-the-hill" element={<KingOfTheHill/>}/>
+        <Route path="/king-of-the-hill-winner" element={<KingOfTheHillWinner/>}/>
+        <Route path="/king-of-the-hill-next-round" element={<KingOfTheHillNextRound/>}/>
+        <Route path="/king-of-the-hill-tournament-over" element={<KingOfTheHillTournamentOver/>}/>
+        <Route path="/login" element={<Login/>}/>
+        <Route path="/signup" element={<SignUp/>}/>
       </Routes>
 
       <Footer/>
