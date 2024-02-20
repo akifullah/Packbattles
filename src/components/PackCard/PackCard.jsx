@@ -16,20 +16,16 @@ const PackCard = ({text, img, price , url, active}) => {
 
 
       <div className={`packCard text-center ${active? "active": null}`}>
-        {
-          active ?
+        
             <img className='line-img line-u' src={lineUp} alt="carve line" />
-            : null
-        }
+          
         <img className='pack-img' src={img} alt="Pack card image" />
         <p>{text}</p>
         <Link to={url}>${price}</Link>
 
-        {
-          active ?
+         
             <img className='line-img line-d' src={lineDown} alt="carve line" />
-            : null
-        }
+      
 
       </div>
 

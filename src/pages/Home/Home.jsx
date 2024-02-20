@@ -130,7 +130,7 @@ const Home = () => {
                         {
                             PackCardData.slice(0,4).map((data, index) => (
                                 <div className="col-lg-3 col-md-6 " data-aos="fade-up" key={index}>
-                                    <PackCard text={data.text} active={data.active} img={data.img} url={data.url} />
+                                    <PackCard price="200" text={data.text} active={data.active} img={data.img} url={data.url} />
                                 </div>
                             ))
                         }
